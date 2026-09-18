@@ -18,18 +18,9 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "certificates": [
-            {
-              "certificateFile": "/etc/xray/cert.pem",
-              "keyFile": "/etc/xray/key.pem"
-            }
-          ],
-          "alpn": ["http/1.1"]
-        },
+        "security": "none",
         "wsSettings": {
-          "path": "/"
+          "path": "/api/v1/stream"
         }
       }
     }
